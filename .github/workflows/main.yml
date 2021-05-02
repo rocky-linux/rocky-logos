@@ -7,5 +7,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - name: Install gzip, gunzip and xz
-        run: apt-get install gzip gunzip xz -y
+      - name: Build source artifact
+        run: mkdir -p rocky-logos-83.0 && cp -r . rocky-logos-83.0 && tar cfj rocky-logos-83.0 rocky-logos-83.0.tar.xz
+      - name: Publish artifact
+        uses: actions/upload-artifact@v2.2.3
+        with:
+          name: rocky-logos-83.0.tar.xz
+          path: rocky-logos-83.0.tar.xz
