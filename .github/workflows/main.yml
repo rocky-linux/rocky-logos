@@ -8,7 +8,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Build source artifact
-        run: mkdir -p rocky-logos-83.0 && cp -r . rocky-logos-83.0 && tar cfj rocky-logos-83.0 rocky-logos-83.0.tar.xz
+        run: mkdir -p ../rocky-logos-83.0 && cp -r . ../rocky-logos-83.0 && mv ../rocky-logos-83.0 . && tar cfj rocky-logos-83.0 rocky-logos-83.0.tar.xz
       - name: Publish artifact
         uses: actions/upload-artifact@v2.2.3
         with:
