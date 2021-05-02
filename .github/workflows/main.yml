@@ -10,17 +10,24 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
+      - name: Extract tag name
+        id: tag
+        uses: actions/github-script@0.2.0
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          script: |
+            return context.payload.ref.replace(/\/refs\/tags\//, '');
       - name: Build source artifact
         run: |
-          mkdir -p ../rocky-logos-${GITHUB_REF##*/} &&
-          cp -r . ../rocky-logos-${GITHUB_REF##*/} &&
-          mv ../rocky-logos-${GITHUB_REF##*/} . &&
-          tar cfj rocky-logos-${GITHUB_REF##*/}.tar.xz rocky-logos-${GITHUB_REF##*/}
+          mkdir -p ../rocky-logos-${{ steps.tag.outputs.result }} &&
+          cp -r . ../rocky-logos-${{ steps.tag.outputs.result }} &&
+          mv ../rocky-logos-${{ steps.tag.outputs.result }} . &&
+          tar cfj rocky-logos-${{ steps.tag.outputs.result }}.tar.xz rocky-logos-${{ steps.tag.outputs.result }}
       - name: Publish artifact
         uses: actions/upload-artifact@v2.2.3
         with:
-          name: rocky-logos-${GITHUB_REF##*/}.tar.xz
-          path: rocky-logos-${GITHUB_REF##*/}.tar.xz
+          name: rocky-logos-${{ steps.tag.outputs.result }}.tar.xz
+          path: rocky-logos-${{ steps.tag.outputs.result }}.tar.xz
       - name: Generate release
         uses: docker://antonyurchenko/git-release:latest
         env:
@@ -32,4 +39,4 @@ jobs:
           ALLOW_TAG_PREFIX: "true"
         with:
           args: |
-              rocky-logos-${GITHUB_REF##*/}.tar.xz
+              rocky-logos-${{ steps.tag.outputs.result }}.tar.xz
