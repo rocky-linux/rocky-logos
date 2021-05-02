@@ -1,0 +1,11 @@
+---
+name: 'Release Formatting'
+on: [ push ]
+
+jobs:
+  package:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Install gzip, gunzip and xz
+        run: apt-get install gzip gunzip xz -y
