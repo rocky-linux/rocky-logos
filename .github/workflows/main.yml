@@ -16,13 +16,15 @@ jobs:
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           script: |
-            return context.payload.ref.replace(/\/refs\/tags\//, '');
+            return context.payload.ref
+              .replace(/\/refs\/tags\//, '')
+              .replace(/refs\/tags\//, '');
       - name: Build source artifact
         run: |
           mkdir -p ../rocky-logos-${{ steps.tag.outputs.result }} &&
           cp -r . ../rocky-logos-${{ steps.tag.outputs.result }} &&
           mv ../rocky-logos-${{ steps.tag.outputs.result }} . &&
-          tar cfj rocky-logos-${{ steps.tag.outputs.result }}.tar.xz rocky-logos-${{ steps.tag.outputs.result }}
+          tar cfJ rocky-logos-${{ steps.tag.outputs.result }}.tar.xz rocky-logos-${{ steps.tag.outputs.result }}
       - name: Publish artifact
         uses: actions/upload-artifact@v2.2.3
         with:
