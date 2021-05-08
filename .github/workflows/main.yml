@@ -4,6 +4,7 @@ on:
   push:
     tags:
       - '*'
+  workflow_dispatch: {}
 
 jobs:
   package:
@@ -25,15 +26,14 @@ jobs:
           cp -r . ../rocky-logos-${{ steps.tag.outputs.result }} &&
           mv ../rocky-logos-${{ steps.tag.outputs.result }} . &&
           tar cfJ rocky-logos-${{ steps.tag.outputs.result }}.tar.xz rocky-logos-${{ steps.tag.outputs.result }}
+      - name: Publish source artifact
+        uses: actions/upload-artifact@v2
+        with:
+          name: rocky-logos.tar.xz
+          path: rocky-logos-*.tar.xz
       - name: Generate release
-        uses: docker://antonyurchenko/git-release:latest
+        uses: softprops/action-gh-release@v1
+        with:
+          files: rocky-logos-*.tar.xz
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          DRAFT_RELEASE: "false"
-          PRE_RELEASE: "false"
-          CHANGELOG_FILE: "none"
-          ALLOW_EMPTY_CHANGELOG: "false"
-          ALLOW_TAG_PREFIX: "true"
-        with:
-          args: |
-              rocky-logos-${{ steps.tag.outputs.result }}.tar.xz
