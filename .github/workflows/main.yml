@@ -25,11 +25,6 @@ jobs:
           cp -r . ../rocky-logos-${{ steps.tag.outputs.result }} &&
           mv ../rocky-logos-${{ steps.tag.outputs.result }} . &&
           tar cfJ rocky-logos-${{ steps.tag.outputs.result }}.tar.xz rocky-logos-${{ steps.tag.outputs.result }}
-      - name: Publish artifact
-        uses: actions/upload-artifact@v2.2.3
-        with:
-          name: rocky-logos-${{ steps.tag.outputs.result }}.tar.xz
-          path: rocky-logos-${{ steps.tag.outputs.result }}.tar.xz
       - name: Generate release
         uses: docker://antonyurchenko/git-release:latest
         env:
