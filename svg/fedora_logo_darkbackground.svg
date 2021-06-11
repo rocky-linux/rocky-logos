@@ -34,11 +34,11 @@
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
      inkscape:window-width="1920"
-     inkscape:window-height="1020"
+     inkscape:window-height="1048"
      id="namedview18"
      showgrid="false"
      inkscape:zoom="0.90509668"
-     inkscape:cx="336.98058"
+     inkscape:cx="376.2029"
      inkscape:cy="225.39029"
      inkscape:window-x="0"
      inkscape:window-y="0"
@@ -52,8 +52,8 @@
     <rect
        x="322.7081"
        y="109.49711"
-       width="673.17567"
-       height="163.76066"
+       width="656.25759"
+       height="245.6882"
        id="rect23901" />
     <rect
        x="319.14754"
@@ -65,7 +65,7 @@
   <path
      fill-rule="evenodd"
      clip-rule="evenodd"
-     d="m 292.06084,243.36946 c 3.99988,-11.45528 6.17374,-23.7669 6.17374,-36.58706 0,-61.27424 -49.67301,-110.946891 -110.9469,-110.946891 -61.27427,0 -110.946936,49.672651 -110.946936,110.946891 0,30.31857 12.161411,57.79757 31.872186,77.82229 l 112.54141,-112.54128 27.78528,27.7848 z m -20.26631,35.30309 -51.04019,-51.03907 -79.92823,79.92803 c 14.13313,6.52618 29.87211,10.16781 46.46157,10.16781 33.84806,0 64.15737,-15.1581 84.50685,-39.05677 z"
+     d="m 227.7201,244.12704 c 3.99988,-11.45528 6.17374,-23.7669 6.17374,-36.58706 0,-61.27424 -49.67301,-110.946892 -110.9469,-110.946892 C 61.672666,96.593088 12,146.26574 12,207.53998 c 0,30.31857 12.161411,57.79757 31.872186,77.82229 L 156.4136,172.82099 l 27.78528,27.7848 z m -20.26631,35.30309 -51.04019,-51.03907 -79.928234,79.92803 c 14.13313,6.52618 29.872114,10.16781 46.461574,10.16781 33.84806,0 64.15737,-15.1581 84.50685,-39.05677 z"
      fill="#10b981"
      id="path897"
      style="stroke-width:1.15569;fill:#ffffff" />
@@ -77,8 +77,10 @@
      xml:space="preserve"
      id="text23899"
      style="font-style:normal;font-variant:normal;font-weight:900;font-stretch:normal;font-size:128px;line-height:1.25;font-family:'Rocky Display';-inkscape-font-specification:'Rocky Display Heavy';white-space:pre;shape-inside:url(#rect23901);fill:#ffffff;fill-opacity:1;stroke:none"
-     transform="translate(17.11998,27.724549)"><tspan
+     transform="translate(-76.526421,-18.110047)"><tspan
        x="322.70898"
-       y="223.98935"
-       id="tspan6847">ROCKY </tspan></text>
+       y="300.31659"
+       id="tspan910"><tspan
+   style="font-size:213.333px"
+   id="tspan908">Rocky</tspan> </tspan></text>
 </svg>
