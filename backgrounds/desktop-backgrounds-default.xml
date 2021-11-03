@@ -4,7 +4,7 @@
     <!-- LOGOTYPE BACKGROUNDS -->
     <wallpaper deleted="false">
         <name>Rocky Linux 9 Default Background - Placeholder Target</name>
-        <filename>/usr/share/backgrounds/rocky-target-placeholder.xml</filename>
+        <filename>/usr/share/backgrounds/rocky-target.xml</filename>
         <options>zoom</options>
         <author>Louis Abel</author>
         <email>label@rockylinux.org</email>
@@ -12,7 +12,7 @@
     </wallpaper> 
     <wallpaper deleted="false">
         <name>Rocky Linux 9 Default Background - Placeholder Mesh</name>
-        <filename>/usr/share/backgrounds/rocky-mesh-placeholder.xml</filename>
+        <filename>/usr/share/backgrounds/rocky-mesh.xml</filename>
         <options>zoom</options>
         <author>Louis Abel</author>
         <email>label@rockylinux.org</email>
