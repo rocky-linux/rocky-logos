@@ -1,14 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE wallpapers SYSTEM "gnome-wp-list.dtd">
 <wallpapers>
-    <!-- LOGOTYPE BACKGROUNDS -->
     <wallpaper deleted="false">
         <name>Rocky Linux 9 Default Background - Placeholder Mesh</name>
         <filename>/usr/share/backgrounds/rocky-default-1-mesh.xml</filename>
         <options>zoom</options>
         <author>Louis Abel</author>
         <email>label@rockylinux.org</email>
-        <license>Free Art License 1.3</license>
+        <license>CC-BY-SA 4.0</license>
     </wallpaper> 
     <wallpaper deleted="false">
         <name>Rocky Linux 9 Default Background - Placeholder Target</name>
@@ -16,6 +15,6 @@
         <options>zoom</options>
         <author>Louis Abel</author>
         <email>label@rockylinux.org</email>
-        <license>Free Art License 1.3</license>
+        <license>CC-BY-SA 4.0</license>
     </wallpaper> 
 </wallpapers>
