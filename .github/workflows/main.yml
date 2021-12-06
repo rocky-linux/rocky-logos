@@ -9,7 +9,9 @@ jobs:
   package:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - name: Checkout
+        uses: actions/checkout@v2
+
       - name: Extract tag name
         id: tag
         uses: actions/github-script@0.2.0
@@ -19,21 +21,24 @@ jobs:
             return context.payload.ref
               .replace(/\/refs\/tags\//, '')
               .replace(/refs\/tags\//, '');
+
       - name: Build source artifact
         run: |
           mkdir -p ../rocky-logos-${{ steps.tag.outputs.result }} &&
           cp -r . ../rocky-logos-${{ steps.tag.outputs.result }} &&
           mv ../rocky-logos-${{ steps.tag.outputs.result }} . &&
           tar cfJ rocky-logos-${{ steps.tag.outputs.result }}.tar.xz rocky-logos-${{ steps.tag.outputs.result }}
+
       - name: Generate release
-        uses: docker://antonyurchenko/git-release:latest
+        uses: docker://antonyurchenko/git-release:v3
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           DRAFT_RELEASE: "false"
           PRE_RELEASE: "false"
           CHANGELOG_FILE: "none"
           ALLOW_EMPTY_CHANGELOG: "false"
-          TAG_PREFIX_REGEX: '^refs\/tags\/(0|[1-9]\d*)\.(0|[1-9]\d*)?$'
+          ALLOW_TAG_PREFIX: "true"
+          #TAG_PREFIX_REGEX: '(0|[1-9]\d*)?'
         with:
           args: |
               rocky-logos-${{ steps.tag.outputs.result }}.tar.xz
