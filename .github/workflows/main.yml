@@ -29,16 +29,24 @@ jobs:
           mv ../rocky-logos-${{ steps.tag.outputs.result }} . &&
           tar cfJ rocky-logos-${{ steps.tag.outputs.result }}.tar.xz rocky-logos-${{ steps.tag.outputs.result }}
 
-      - name: Generate release
-        uses: docker://antonyurchenko/git-release:v3
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          DRAFT_RELEASE: "false"
-          PRE_RELEASE: "false"
-          CHANGELOG_FILE: "none"
-          ALLOW_EMPTY_CHANGELOG: "false"
-          ALLOW_TAG_PREFIX: "true"
-          #TAG_PREFIX_REGEX: '(0|[1-9]\d*)?'
+      - name: Generate Release
+        uses: marvinpinto/action-automatic-releases@latest
         with:
-          args: |
-              rocky-logos-${{ steps.tag.outputs.result }}.tar.xz
+          repo_token: "${{ secrets.GITHUB_TOKEN }}"
+          prerelease: false
+          files: |
+            rocky-logos-${{ steps.tag.outputs.result }}.tar.xz
+
+#      - name: Generate release
+#        uses: docker://antonyurchenko/git-release:v3
+#        env:
+#          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+#          DRAFT_RELEASE: "false"
+#          PRE_RELEASE: "false"
+#          CHANGELOG_FILE: "none"
+#          ALLOW_EMPTY_CHANGELOG: "false"
+#          ALLOW_TAG_PREFIX: "true"
+#          #TAG_PREFIX_REGEX: '(0|[1-9]\d*)?'
+#        with:
+#          args: |
+#              rocky-logos-${{ steps.tag.outputs.result }}.tar.xz
