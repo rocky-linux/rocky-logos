@@ -33,7 +33,6 @@ jobs:
           PRE_RELEASE: "false"
           CHANGELOG_FILE: "none"
           ALLOW_EMPTY_CHANGELOG: "false"
-          ALLOW_TAG_PREFIX: "true"
         with:
           args: |
               rocky-logos-${{ steps.tag.outputs.result }}.tar.xz
