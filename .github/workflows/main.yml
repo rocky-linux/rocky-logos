@@ -30,12 +30,11 @@ jobs:
           tar cfJ rocky-logos-${{ steps.tag.outputs.result }}.tar.xz rocky-logos-${{ steps.tag.outputs.result }}
 
       - name: Generate Release
-        uses: marvinpinto/action-automatic-releases@latest
+        uses: ncipollo/release-action@v1
         with:
-          repo_token: "${{ secrets.GITHUB_TOKEN }}"
+          token: "${{ secrets.GITHUB_TOKEN }}"
           prerelease: false
-          files: |
-            rocky-logos-${{ steps.tag.outputs.result }}.tar.xz
+          artifacts: "rocky-logos-${{ steps.tag.outputs.result }}.tar.xz"
 
 #      - name: Generate release
 #        uses: docker://antonyurchenko/git-release:v3
