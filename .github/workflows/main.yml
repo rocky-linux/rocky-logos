@@ -34,7 +34,7 @@ jobs:
         with:
           token: "${{ secrets.GITHUB_TOKEN }}"
           prerelease: false
-          artifacts: "rocky-logos-${{ steps.tag.outputs.result }}.tar.xz"
+          artifacts: "*.tar.xz"
 
 #      - name: Generate release
 #        uses: docker://antonyurchenko/git-release:v3
