@@ -52,7 +52,7 @@
     <!-- Nine -->
     <wallpaper deleted="false">
         <name>Rocky Linux 9 Default Background - Nine</name>
-        <filename>/usr/share/backgrounds/rocky-default-9-nine.xml</filename>
+        <filename>/usr/share/backgrounds/rocky-default-9-nine-time.xml</filename>
         <options>zoom</options>
         <author>Natalie Forde</author>
         <license>CC-BY-SA 4.0</license>
@@ -76,7 +76,7 @@
     <!-- Big Square -->
     <wallpaper deleted="false">
         <name>Rocky Linux 9 Default Background - Big Square</name>
-        <filename>/usr/share/backgrounds/rocky-default-9-big-square.xml</filename>
+        <filename>/usr/share/backgrounds/rocky-default-9-bigsquare-teal-time.xml</filename>
         <options>zoom</options>
         <author>Alejandro Ramallo</author>
         <license>CC-BY-SA 4.0</license>
