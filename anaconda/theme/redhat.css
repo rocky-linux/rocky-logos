@@ -1,0 +1,41 @@
+/* Anaconda gtk style overrides for RHEL */
+
+/* vendor-specific colors */
+@define-color rocky #18181b;
+
+/* logo and sidebar classes */
+
+/* The sidebar consists of three parts: a background, a logo, and a product logo,
+ * rendered in that order. The product logo is empty by default and is intended
+ * to be overridden by a stylesheet in product.img.
+ */
+.logo-sidebar {
+    background-image: url('/usr/share/anaconda/pixmaps/sidebar-bg.png');
+    background-color: @rocky;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top left;
+}
+
+/* Add a logo to the sidebar */
+.logo {
+    background-image: url('/usr/share/anaconda/pixmaps/sidebar-logo.png');
+    background-position: 50% 20px;
+    background-repeat: no-repeat;
+    background-color: transparent;
+}
+
+/* This is a placeholder to be filled by a product-specific logo. */
+.product-logo {
+    background-image: none;
+    background-color: transparent;
+}
+
+AnacondaSpokeWindow #nav-box {
+    background-color: @rocky;
+    background-image: url('/usr/share/anaconda/pixmaps/topbar-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top left;
+    color: white;
+}
