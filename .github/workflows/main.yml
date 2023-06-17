@@ -1,0 +1,51 @@
+---
+name: 'Release Formatting'
+on:
+  push:
+    tags:
+      - '*'
+
+jobs:
+  package:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Extract tag name
+        id: tag
+        uses: actions/github-script@0.2.0
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          script: |
+            return context.payload.ref
+              .replace(/\/refs\/tags\//, '')
+              .replace(/refs\/tags\//, '');
+
+      - name: Build source artifact
+        run: |
+          mkdir -p ../rocky-logos-${{ steps.tag.outputs.result }} &&
+          cp -r . ../rocky-logos-${{ steps.tag.outputs.result }} &&
+          mv ../rocky-logos-${{ steps.tag.outputs.result }} . &&
+          tar cfJ rocky-logos-${{ steps.tag.outputs.result }}.tar.xz rocky-logos-${{ steps.tag.outputs.result }}
+
+      - name: Generate Release
+        uses: ncipollo/release-action@v1
+        with:
+          token: "${{ secrets.GITHUB_TOKEN }}"
+          prerelease: false
+          artifacts: "*.tar.xz"
+
+#      - name: Generate release
+#        uses: docker://antonyurchenko/git-release:v3
+#        env:
+#          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+#          DRAFT_RELEASE: "false"
+#          PRE_RELEASE: "false"
+#          CHANGELOG_FILE: "none"
+#          ALLOW_EMPTY_CHANGELOG: "false"
+#          ALLOW_TAG_PREFIX: "true"
+#          #TAG_PREFIX_REGEX: '(0|[1-9]\d*)?'
+#        with:
+#          args: |
+#              rocky-logos-${{ steps.tag.outputs.result }}.tar.xz

@@ -1,0 +1,37 @@
+<background>
+  <starttime>
+    <year>2022</year>
+    <month>01</month>
+    <day>01</day>
+    <hour>8</hour>
+    <minute>00</minute>
+    <second>00</second>
+  </starttime>
+  <!-- This animation starts at 8A -->
+
+  <!-- Goes from 8A-6P (10 hours) -->
+  <static>
+    <duration>36000.0</duration>
+    <file>/usr/share/backgrounds/rocky-default-9-bigsquare-teal-day.png</file>
+  </static>
+
+  <!-- Day to night -->
+  <transition type="overlay">
+    <duration>7200.0</duration>
+    <from>/usr/share/backgrounds/rocky-default-9-bigsquare-teal-day.png</from>
+    <to>/usr/share/backgrounds/rocky-default-9-bigsquare-teal-night.png</to>
+  </transition>
+
+  <!-- Goes from 6P-8A -->
+  <static>
+    <duration>36000.0</duration>
+    <file>/usr/share/backgrounds/rocky-default-9-bigsquare-teal-night.png</file>
+  </static>
+
+  <!-- Night to day -->
+  <transition type="overlay">
+    <duration>7200.0</duration>
+    <from>/usr/share/backgrounds/rocky-default-9-bigsquare-teal-night.png</from>
+    <to>/usr/share/backgrounds/rocky-default-9-bigsquare-teal-day.png</to>
+  </transition>
+</background>
