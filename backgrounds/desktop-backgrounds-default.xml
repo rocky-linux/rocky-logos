@@ -4,121 +4,144 @@
     <!-- Abstract 1 -->
     <wallpaper deleted="false">
         <name>Rocky Linux 10 Default Background - Abstract (1)</name>
-        <filename>/usr/share/backgrounds/rocky-default-9-abstract-1-time.xml</filename>
+        <filename>/usr/share/backgrounds/rocky-default-10-abstract-1-time.xml</filename>
         <options>zoom</options>
-        <author>Natalie Forde</author>
+        <author>Gwendolyn K.</author>
         <license>CC-BY-SA 4.0</license>
     </wallpaper>
     <wallpaper deleted="false">
         <name>Rocky Linux 10 Default Background - Abstract (1) (Day)</name>
-        <filename>/usr/share/backgrounds/rocky-default-9-abstract-1-day.png</filename>
+        <filename>/usr/share/backgrounds/rocky-default-10-abstract-1-day.png</filename>
         <options>zoom</options>
-        <author>Natalie Forde</author>
+        <author>Gwendolyn K.</author>
         <license>CC-BY-SA 4.0</license>
     </wallpaper>
     <wallpaper deleted="false">
         <name>Rocky Linux 10 Default Background - Abstract (1) (Night)</name>
-        <filename>/usr/share/backgrounds/rocky-default-9-abstract-1-night.png</filename>
+        <filename>/usr/share/backgrounds/rocky-default-10-abstract-1-night.png</filename>
         <options>zoom</options>
-        <author>Natalie Forde</author>
+        <author>Gwendolyn K.</author>
         <license>CC-BY-SA 4.0</license>
     </wallpaper>
     <!-- End Abstract 1 -->
 
-    <!-- Abstract 2 -->
+    <!-- Gemstone Skies -->
     <wallpaper deleted="false">
-        <name>Rocky Linux 10 Default Background - Abstract (2)</name>
-        <filename>/usr/share/backgrounds/rocky-default-9-abstract-2-time.xml</filename>
+        <name>Rocky Linux 10 Default Background - Gemstone Skies</name>
+        <filename>/usr/share/backgrounds/rocky-default-10-gemstone-skies-time.xml</filename>
         <options>zoom</options>
-        <author>Natalie Forde</author>
+        <author>Gwendolyn K.</author>
         <license>CC-BY-SA 4.0</license>
     </wallpaper>
     <wallpaper deleted="false">
-        <name>Rocky Linux 10 Default Background - Abstract (2) (Day)</name>
-        <filename>/usr/share/backgrounds/rocky-default-9-abstract-2-day.png</filename>
+        <name>Rocky Linux 10 Default Background - Gemstone Skies (Day)</name>
+        <filename>/usr/share/backgrounds/rocky-default-10-gemstone-skies-day.png</filename>
         <options>zoom</options>
-        <author>Natalie Forde</author>
+        <author>Gwendolyn K.</author>
         <license>CC-BY-SA 4.0</license>
     </wallpaper>
     <wallpaper deleted="false">
-        <name>Rocky Linux 10 Default Background - Abstract (2) (Night)</name>
-        <filename>/usr/share/backgrounds/rocky-default-9-abstract-2-night.png</filename>
+        <name>Rocky Linux 10 Default Background - Gemstone Skies (Night)</name>
+        <filename>/usr/share/backgrounds/rocky-default-10-gemstone-skies-night.png</filename>
         <options>zoom</options>
-        <author>Natalie Forde</author>
+        <author>Gwendolyn K.</author>
         <license>CC-BY-SA 4.0</license>
     </wallpaper>
-    <!-- End Abstract 2 -->
+    <!-- Gemstone Skies -->
 
-    <!-- Nine -->
+    <!-- Quartz Forest -->
     <wallpaper deleted="false">
-        <name>Rocky Linux 10 Default Background - Nine</name>
-        <filename>/usr/share/backgrounds/rocky-default-9-nine-time.xml</filename>
+        <name>Rocky Linux 10 Default Background - Quartz Forest</name>
+        <filename>/usr/share/backgrounds/rocky-default-10-quartz-forest-time.xml</filename>
         <options>zoom</options>
-        <author>Natalie Forde</author>
+        <author>Kami (Kyren)</author>
         <license>CC-BY-SA 4.0</license>
     </wallpaper>
     <wallpaper deleted="false">
-        <name>Rocky Linux 10 Default Background - Nine (Day)</name>
-        <filename>/usr/share/backgrounds/rocky-default-9-nine-day.jpg</filename>
+        <name>Rocky Linux 10 Default Background - Quartz Forest (Day)</name>
+        <filename>/usr/share/backgrounds/rocky-default-10-quartz-forest-day.jpg</filename>
         <options>zoom</options>
-        <author>Natalie Forde</author>
+        <author>Kami (Kyren)</author>
         <license>CC-BY-SA 4.0</license>
     </wallpaper>
     <wallpaper deleted="false">
-        <name>Rocky Linux 10 Default Background - Nine (Night)</name>
-        <filename>/usr/share/backgrounds/rocky-default-9-nine-night.jpg</filename>
+        <name>Rocky Linux 10 Default Background - Quartz Forest (Night)</name>
+        <filename>/usr/share/backgrounds/rocky-default-10-quartz-forest-night.jpg</filename>
         <options>zoom</options>
-        <author>Natalie Forde</author>
+        <author>Kami (Kyren)</author>
         <license>CC-BY-SA 4.0</license>
     </wallpaper>
-    <!-- End Nine -->
+    <!-- Quartz Forest -->
 
-    <!-- Big Square -->
+    <!-- Arizona Sun -->
     <wallpaper deleted="false">
-        <name>Rocky Linux 10 Default Background - Big Square</name>
-        <filename>/usr/share/backgrounds/rocky-default-9-bigsquare-teal-time.xml</filename>
+        <name>Rocky Linux 10 Default Background - Arizona Sun</name>
+        <filename>/usr/share/backgrounds/rocky-default-10-arizona-time.xml</filename>
         <options>zoom</options>
-        <author>Alejandro Ramallo</author>
+        <author>Summer</author>
         <license>CC-BY-SA 4.0</license>
     </wallpaper>
     <wallpaper deleted="false">
-        <name>Rocky Linux 10 Default Background - Big Square (Day)</name>
-        <filename>/usr/share/backgrounds/rocky-default-9-bigsquare-teal-day.png</filename>
+        <name>Rocky Linux 10 Default Background - Arizona Sunrise (Day)</name>
+        <filename>/usr/share/backgrounds/rocky-default-10-arizona-sunrise.jpg</filename>
         <options>zoom</options>
-        <author>Alejandro Ramallo</author>
+        <author>Summer</author>
         <license>CC-BY-SA 4.0</license>
     </wallpaper>
     <wallpaper deleted="false">
-        <name>Rocky Linux 10 Default Background - Big Square (Night)</name>
-        <filename>/usr/share/backgrounds/rocky-default-9-bigsquare-teal-night.png</filename>
+        <name>Rocky Linux 10 Default Background - Arizona Sunset (Night)</name>
+        <filename>/usr/share/backgrounds/rocky-default-10-arizona-sunset.jpg</filename>
         <options>zoom</options>
-        <author>Alajandro Ramallo</author>
+        <author>Summer</author>
         <license>CC-BY-SA 4.0</license>
     </wallpaper>
-    <!-- End Big Square -->
-
-    <wallpaper deleted="false">
-        <name>Rocky Linux 10 Default Background - Onyx Mountains</name>
-        <filename>/usr/share/backgrounds/rocky-default-9-onyx-mountains.xml</filename>
-        <options>zoom</options>
-        <author>Ezequiel Bruni</author>
-        <license>CC0</license>
-    </wallpaper>
+    <!-- Arizona Sun -->
 
     <!-- Sapphire -->
     <wallpaper deleted="false">
         <name>Rocky Linux 10 Default Background - Sapphire</name>
-        <filename>/usr/share/backgrounds/rocky-default-9-sapphire.xml</filename>
+        <filename>/usr/share/backgrounds/rocky-default-10-sapphire.xml</filename>
         <options>zoom</options>
         <author>Gwendolyn K.</author>
-        <license>Free Art 1.3</license>
+        <license>CC-BY-SA 4.0</license>
     </wallpaper>
     <wallpaper deleted="false">
         <name>Rocky Linux 10 Default Background - Sapphire Light</name>
-        <filename>/usr/share/backgrounds/rocky-default-9-sapphire-light.xml</filename>
+        <filename>/usr/share/backgrounds/rocky-default-10-sapphire-light.xml</filename>
         <options>zoom</options>
         <author>Gwendolyn K.</author>
-        <license>Free Art 1.3</license>
+        <license>CC-BY-SA 4.0</license>
     </wallpaper>
     <!-- End Sapphire -->
+
+    <!-- Abstract 2-5 -->
+    <wallpaper deleted="false">
+        <name>Rocky Linux 10 Default Background - Abstract 2</name>
+        <filename>/usr/share/backgrounds/rocky-default-10-abstract-2.xml</filename>
+        <options>zoom</options>
+        <author>Natalie Forde</author>
+        <license>CC-BY-SA 4.0</license>
+    </wallpaper>
+    <wallpaper deleted="false">
+        <name>Rocky Linux 10 Default Background - Abstract 3</name>
+        <filename>/usr/share/backgrounds/rocky-default-10-abstract-3.xml</filename>
+        <options>zoom</options>
+        <author>Natalie Forde</author>
+        <license>CC-BY-SA 4.0</license>
+    </wallpaper>
+    <wallpaper deleted="false">
+        <name>Rocky Linux 10 Default Background - Abstract 4</name>
+        <filename>/usr/share/backgrounds/rocky-default-10-abstract-4.xml</filename>
+        <options>zoom</options>
+        <author>Natalie Forde</author>
+        <license>CC-BY-SA 4.0</license>
+    </wallpaper>
+    <wallpaper deleted="false">
+        <name>Rocky Linux 10 Default Background - Abstract 5</name>
+        <filename>/usr/share/backgrounds/rocky-default-10-abstract-5.xml</filename>
+        <options>zoom</options>
+        <author>Natalie Forde</author>
+        <license>CC-BY-SA 4.0</license>
+    </wallpaper>
+    <!-- End Abstract 2-5 -->
 </wallpapers>
